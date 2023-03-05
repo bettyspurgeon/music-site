@@ -1,5 +1,8 @@
 import { SideBarItem } from "@/components/SideBarItem";
+import { DraggableBox } from "@/components/DraggableBox";
 import { categories } from "@/information/categories";
+import { albums } from "@/information/albums";
+
 export default function Home() {
   return (
     <>
@@ -11,6 +14,9 @@ export default function Home() {
         </div>
         <div className="main-content">
           <h1>Betty's Music Library</h1>
+          {albums.taylorSwiftAlbums.map((album) => {
+            return <DraggableBox albumArt={album.albumArtLink} />; 
+          })}
         </div>
       </section>
       <style jsx>{`
@@ -27,8 +33,6 @@ export default function Home() {
         }
 
         .main-content {
-          margin-left: 10rem;
-          margin-top: 10rem;
         }
       `}</style>
     </>
