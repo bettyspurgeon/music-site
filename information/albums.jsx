@@ -14,8 +14,7 @@ export const albums = {
       best: "Should've Said No",
       worst: "A Perfectly Good Heart",
       fave: "Picture to Burn",
-      albumArtLink:
-        "/album-art/taylor-swift/TaylorSwift-Fearless.png",
+      albumArtLink: "/album-art/taylor-swift/TaylorSwift-TaylorSwift.png",
     },
 
     {
@@ -24,7 +23,7 @@ export const albums = {
       best: "Fearless",
       worst: "Change",
       fave: "Tell Me Why",
-      albumArtLink: "",
+      albumArtLink: "/album-art/taylor-swift/TaylorSwift-Fearless.png",
     },
 
     {
@@ -33,7 +32,7 @@ export const albums = {
       best: "Dear John",
       worst: "Long Live",
       fave: "Speak Now",
-      albumArtLink: "",
+      albumArtLink: "/album-art/taylor-swift/TaylorSwift-SpeakNow.png",
     },
 
     {
@@ -42,7 +41,7 @@ export const albums = {
       best: "Red",
       worst: "Stay Stay Stay",
       fave: "We Are Never Getting Back Together",
-      albumArtLink: "",
+      albumArtLink: "/album-art/taylor-swift/TaylorSwift-Red.png",
     },
 
     {
@@ -51,7 +50,7 @@ export const albums = {
       best: "Out of the Woods",
       worst: "Bad Blood",
       fave: "New Romantics",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-1989.png",
     },
 
     {
@@ -60,7 +59,7 @@ export const albums = {
       best: "Delicate",
       worst: "Look What You Made Me Do",
       fave: "Getaway Car",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-reputation.png",
     },
 
     {
@@ -69,7 +68,7 @@ export const albums = {
       best: "The Archer",
       worst: "ME!",
       fave: "False God",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-lover.png",
     },
 
     {
@@ -78,7 +77,7 @@ export const albums = {
       best: "exile (feat. Bon Iver)",
       worst: "peace",
       fave: "betty",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-folklore.png",
     },
 
     {
@@ -87,7 +86,7 @@ export const albums = {
       best: "Champagne Problems",
       worst: "Closure",
       fave: "No Body, No Crime",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-evermore.png",
     },
 
     {
@@ -96,7 +95,7 @@ export const albums = {
       best: "Hey Stephen (Taylor's Version)",
       worst: "White Horse (Taylor's Version)",
       fave: "You Belong With Me (Taylor's Version)",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-FearlessTV.png",
     },
 
     {
@@ -105,7 +104,7 @@ export const albums = {
       best: "All Too Well (10 Minute Version) (Taylor's Version)",
       worst: "Holy Ground (Taylor's Version)",
       fave: "I Bet You Think About Me (Taylor's Version) (From the Vault)",
-      albumArtLink: "",
+      albumArtLink: "/album-art/taylor-swift/TaylorSwift-RedTV.jpeg",
     },
 
     {
@@ -114,7 +113,7 @@ export const albums = {
       best: "Maroon",
       worst: "Question...?",
       fave: "You're on Your Own, Kid",
-      albumArtLink: "",
+      albumArtLink: "album-art/taylor-swift/TaylorSwift-midnights.png",
     },
   ],
 };

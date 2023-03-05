@@ -1,42 +1,50 @@
-import Draggable, { DraggableData, DraggableEvent } from "react-draggable";
 import { useState } from "react";
+import Draggable, { DraggableCore } from "react-draggable";
 
-export const DraggableBox = ({name, albumArt}) => {
+export const DraggableBox = ({ name, albumArt }) => {
+  let zIndex = 0;
   const [currentPosition, setCurrentPosition] = useState({
-    xRate: Math.random() * 400,
-    yRate: Math.random() * 400,
+    xRate: Math.random() * 950,
+    yRate: Math.random() * 350,
   });
+
+  const onDrag = (e, data) => {
+    setCurrentPosition({ xRate: data.lastX, yRate: data.lastY });
+    zIndex = 999; 
+  };
+
   return (
     <>
-      <Draggable>
+      <Draggable
+        position={{
+          x: currentPosition.xRate,
+          y: currentPosition.yRate,
+        }}
+        onDrag={onDrag}
+      >
         <div className="piece">
-          
           <div className="sub-circle"></div>
         </div>
       </Draggable>
       <style jsx>{`
         div.piece {
-          position: relative;
+          display: flex; 
+          flex-direction: column; 
+          position: absolute;
           background-image: url(${albumArt});
+          background-size: cover;
           border-radius: 100%;
           width: 300px;
           height: 300px;
-          opacity: 0.8; 
+          cursor: grab;
+          z-index: ${zIndex}
         }
-        .piece-phrase {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          transform: translate(-50%, -50%);
-          color: white;
-        }
-        .sub-circle { 
+        .sub-circle {
           border-radius: 100%;
-          height: 30px;
-          width: 30px;
+          height: 40px;
+          width: 40px;
           background-color: #ffffff;
-          margin: 0 auto;
+          margin: auto;
         }
       `}</style>
     </>
