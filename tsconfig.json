@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/SideBarItem.jsx", "information/categories.jsx", "pages/_app.jsx", "pages/_document.jsx", "pages/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/SideBarItem.jsx",  "components/DraggableBox.jsx","information/categories.jsx", "pages/_app.jsx", "pages/_document.jsx", "information/albums.jsx","pages/index.jsx"],
   "exclude": ["node_modules"]
 }
