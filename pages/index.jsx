@@ -50,8 +50,9 @@ export default function Home() {
         </div>
         <div className="main-content">
           <h1>Betty's Music Library</h1>
-
-          {albumDiv}
+          <div className="albums-div">
+            {albumDiv}
+          </div>
         </div>
       </section>
       <style jsx>{`
@@ -59,7 +60,9 @@ export default function Home() {
           display: flex;
           flex-direction: row;
         }
-
+        .main-content {
+          width: 95vw; 
+        }
         .sidenav {
           display: flex;
           flex-direction: column;

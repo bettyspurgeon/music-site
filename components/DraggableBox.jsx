@@ -23,7 +23,7 @@ export const DraggableBox = ({
 
   const [currentPosition, setCurrentPosition] = useState({
     xRate: Math.random() * 600,
-    yRate: Math.random() * 550,
+    yRate: Math.random() * 500,
   });
   const [isDragging, setIsDragging] = useState(false);
 
@@ -45,17 +45,18 @@ export const DraggableBox = ({
         </div>
       </Draggable>
       <Modal show={isShow} size="lg" backdrop="true">
-        <Modal.Header closeButton onClick={initModal}></Modal.Header>
+        <Modal.Header closeButton onClick={initModal}>
+          <h3>
+            {album} - {artist}
+          </h3>
+        </Modal.Header>
         <Modal.Body>
           <div className="modal-body">
             <img className="album-art" src={albumArtLink} alt="" />
-            <div>
-              <h3>
-                {album} - {artist}
-              </h3>
-              <h4>Best: {best}</h4>
-              <h4>Worst: {worst}</h4>
-              <h4>Fave: {fave}</h4>
+            <div className="album-info">
+              <p>Best: {best}</p>
+              <p>Worst: {worst}</p>
+              <p>Fave: {fave}</p>
             </div>
           </div>
         </Modal.Body>
@@ -80,11 +81,16 @@ export const DraggableBox = ({
           background-color: #ffffff;
           margin: auto;
         }
-        img.album-art {
-          height: 15rem;
-        }
-        .modal-body {
+        div.modal-body {
           display: flex;
+          flex-direction: row;
+          width: 100%; 
+        }
+        .album-art {
+          max-width: 20rem; 
+        }
+        div.album-info {
+          margin-left: 2rem;
         }
       `}</style>
     </>
